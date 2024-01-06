@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply p-0 m-0;
+    @apply font-sans text-lg;
+    @apply text-light bg-darker;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  a {
+    @apply text-cyan no-underline;
+  }
+
+  a:hover {
+    @apply text-pink transition-colors duration-500;
+  }
+  
+  ::selection {
+    @apply bg-dark;
+  }
+}
