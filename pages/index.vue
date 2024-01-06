@@ -3,11 +3,26 @@
 
     const { data } = await useAsyncData(() => 
         queryContent('posts') 
-            .only(["_path", "title", "date"])
+            // .only(["_path", "title", "date", "coverImage"])
             .sort({ date: -1 })
             .find()
     );
-    const blogPosts = ref(data.value);
+
+    function generateAltText(file) {
+        const fileName = file
+            .split("/").at(-1) // get file name
+            .split(".").at(0); // strip extension
+        return `Cover image for "${fileName}"`;
+    }
+
+    const addAltText = data.value.map(p => (
+        {
+            ...p,
+            altText: generateAltText(p._file)
+        }
+    ));
+
+    const blogPosts = ref(addAltText);
 </script>
 
 <template>
@@ -27,11 +42,19 @@
                         :title="post.title"
                         :date="post.date"
                     /> -->
-                    <NuxtLink :to="post._path">{{ post.title }}</NuxtLink>
-                    <br />
-                    <small class="text-blue">
-                        <Date :dateString="post.date" />
-                    </small>
+                    <img
+                        v-if="post.coverImage" 
+                        class="max-w-20 mr-4 inline-block align-middle"
+                        :src="post.coverImage"
+                        :alt="post.altText"
+                    />
+                    <div class="inline-block align-middle">
+                        <NuxtLink :to="post._path">{{ post.title }}</NuxtLink>
+                        <br />
+                        <small class="text-blue">
+                            <Date :dateString="post.date" />
+                        </small>
+                    </div>
                 </li>
             </ul>
         </section>   
