@@ -12,7 +12,7 @@
         const fileName = file
             .split("/").at(-1) // get file name
             .split(".").at(0); // strip extension
-        return `Cover image for "${fileName}"`;
+        return `Cover image for ${fileName}`;
     }
 
     const addAltText = data.value.map(p => (
