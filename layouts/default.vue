@@ -8,13 +8,13 @@ const atHome = computed(() => route.path === '/')
 
 <template>
     <div class="max-w-xl py-0 px-4 mt-12 mb-24 mx-auto">
-        <head>
-            <link rel="icon" href="/favicon.ico" />
+        <Head>
+            <Link rel="icon" href="/favicon.ico" />
             <meta
                 name="description"
                 content="Nuxt blog"
             />
-        </head>
+        </Head>
         <header>
             <div v-if="atHome" class="centered">
                 <img
@@ -48,7 +48,7 @@ const atHome = computed(() => route.path === '/')
         <main>
             <slot></slot>
         </main>
-        <div>
+        <footer>
             <div v-if="!atHome" class="mt-12">
                 <NuxtLink to="/">← Back to home</NuxtLink>
             </div>
@@ -64,7 +64,7 @@ const atHome = computed(() => route.path === '/')
                     />
                 </NuxtLink>
             </div>
-        </div>
+        </footer>
     </div>
 </template>
 

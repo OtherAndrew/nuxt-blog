@@ -8,26 +8,32 @@
             .find()
     );
     const blogPosts = ref(data.value);
-    // TODO: fix post title not resetting
 </script>
 
 <template>
-    <head>
-        <title>Dev Blog</title>
-    </head>
-    <section class="text-xl">
-       <p>Lean, mean, JS machine.</p> 
-    </section>
-    <section class="text-xl pt-px">
-        <h2 class="text-2xl font-bold my-4 mx-0">Blog</h2>
-        <ul class="list-none p-0 m-0">
-            <li v-for="post in blogPosts" class="pb-5">
-                <BlogLink 
-                    :link="post._path"
-                    :title="post.title"
-                    :date="post.date"
-                />
-            </li>
-        </ul>
-    </section>    
+    <Head>
+        <Title>Dev Blog</Title>
+    </Head>
+    <div>
+        <section class="text-xl">
+            <p>Lean, mean, JS machine.</p> 
+        </section>
+        <section class="text-xl pt-px">
+            <h2 class="text-2xl font-bold my-4 mx-0">Blog</h2>
+            <ul class="list-none p-0 m-0">
+                <li v-for="post in blogPosts" class="pb-5">
+                    <!-- <BlogLink 
+                        :link="post._path"
+                        :title="post.title"
+                        :date="post.date"
+                    /> -->
+                    <NuxtLink :to="post._path">{{ post.title }}</NuxtLink>
+                    <br />
+                    <small class="text-blue">
+                        <Date :dateString="post.date" />
+                    </small>
+                </li>
+            </ul>
+        </section>   
+    </div>
 </template>
