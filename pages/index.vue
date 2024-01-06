@@ -42,6 +42,11 @@
                         :src="post.coverImage"
                         :alt="post.altText"
                     />
+                    <img class="max-w-20 mr-4 inline-block align-middle grayscale"
+                        v-else
+                        src="/images/vue logo.png"
+                        alt="placeholder image"
+                    />
                     <div class="inline-block align-middle">
                         <NuxtLink :to="post._path">{{ post.title }}</NuxtLink>
                         <br />
