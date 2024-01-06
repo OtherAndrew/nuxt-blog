@@ -1,3 +1,3 @@
 <template>
-    <p>this is the blog posts</p>
+    <p>This is the index file for the blog posts.</p>
 </template>

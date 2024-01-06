@@ -8,6 +8,7 @@
             .find()
     );
     const blogPosts = ref(data.value);
+    // TODO: fix post title not resetting
 </script>
 
 <template>
