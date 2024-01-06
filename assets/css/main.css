@@ -6,7 +6,7 @@
   html,
   body {
     @apply p-0 m-0;
-    @apply font-sans text-lg;
+    @apply font-sans text-base/7;
     @apply text-light bg-darker;
   }
 
