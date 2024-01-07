@@ -34,7 +34,7 @@
         <section class="text-xl pt-px">
             <h2 class="text-2xl font-bold my-4 mx-0">Blog</h2>
             <ul class="list-none p-0 m-0">
-                <li v-for="post in blogPosts" class="pb-5">
+                <li v-for="post in blogPosts" class="pb-5" :key="post._path">
                     <img class="max-w-20 mr-4 inline-block align-middle"
                         v-if="post.coverImage" 
                         :src="post.coverImage"
