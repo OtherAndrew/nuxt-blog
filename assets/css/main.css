@@ -19,7 +19,7 @@
   }
 
   a:hover {
-    @apply text-pink transition-colors duration-500;
+    @apply text-pink transition duration-500;
   }
   
   ::selection {

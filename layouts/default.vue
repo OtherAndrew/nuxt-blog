@@ -32,7 +32,7 @@ const atHome = computed(() => route.path === '/')
                 <NuxtLink to="/">
                     <img
                         src="/images/profile.jpg"
-                        class="rounded-full"
+                        class="rounded-full transition duration-500 hover:opacity-50"
                         height="108"
                         width="108"
                         alt="Profile picture"

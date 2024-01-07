@@ -37,16 +37,18 @@
             <h2 class="text-2xl font-bold my-4 mx-0">Blog</h2>
             <ul class="list-none p-0 m-0">
                 <li v-for="post in blogPosts" class="pb-5" :key="post._path">
-                    <img class="max-w-20 mr-4 inline-block align-middle"
-                        v-if="post.coverImage" 
-                        :src="post.coverImage"
-                        :alt="post.altText"
-                    />
-                    <img class="max-w-20 mr-4 inline-block align-middle grayscale"
-                        v-else
-                        src="/images/vue logo.png"
-                        alt="placeholder image"
-                    />
+                    <NuxtLink :to="post._path">
+                        <img class="postCoverImage"
+                            v-if="post.coverImage" 
+                            :src="post.coverImage"
+                            :alt="post.altText"
+                        />
+                        <img class="postCoverImage grayscale"
+                            v-else
+                            src="/images/vue logo.png"
+                            alt="placeholder image"
+                        />
+                    </NuxtLink>
                     <div class="inline-block align-middle">
                         <NuxtLink :to="post._path">{{ post.title }}</NuxtLink>
                         <br />
@@ -59,3 +61,9 @@
         </section>   
     </div>
 </template>
+
+<style scoped>
+.postCoverImage {
+    @apply max-w-20 mr-4 inline-block align-middle transition duration-500 hover:opacity-50
+}
+</style>
