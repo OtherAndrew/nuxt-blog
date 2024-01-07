@@ -1,6 +1,6 @@
 # Nuxt 3 Minimal Starter
 
-[LINK TO BLOG HERE](https://nuxt-blog-beige.vercel.app/posts/trivia-maze)
+[LINK TO BLOG HERE](https://nuxt-blog-beige.vercel.app)
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
