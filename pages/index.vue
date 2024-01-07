@@ -11,14 +11,14 @@
         return `Cover image for ${fileName}`;
     }
 
-    const addAltText = data.value.map(p => {
-        if ("coverImage" in p) {
+    const addAltText = data.value.map(post => {
+        if ("coverImage" in post) {
             return {
-                ...p,
-                altText: generateAltText(p._path),
+                ...post,
+                altText: generateAltText(post._path),
             };
         } else {
-            return p;
+            return post;
         }
     });
 
