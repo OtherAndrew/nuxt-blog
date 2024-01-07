@@ -13,8 +13,6 @@
         return `Cover image for ${fileName}`;
     }
 
-    console.log(data.value)
-
     const addAltText = data.value.map(p => (
         {
             ...p,
