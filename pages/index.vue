@@ -28,7 +28,7 @@
         <Title>Dev Blog</Title>
     </Head>
     <div>
-        <section class="text-xl">
+        <section class="text-xl text-center">
             <p>Lean, mean, JS machine.</p> 
         </section>
         <section class="text-xl pt-px">

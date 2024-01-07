@@ -24,7 +24,7 @@ const atHome = computed(() => route.path === '/')
                     width="144"
                     alt="Profile picture"
                 />
-                <h1 class="text-4xl font-extrabold tracking-normal my-4 mx-0">
+                <h1 class="text-4xl font-extrabold tracking-normal mt-4 mb-0 mx-0">
                     {{ name }}
                 </h1>
             </div>
