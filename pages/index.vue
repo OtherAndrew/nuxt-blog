@@ -38,12 +38,12 @@
             <ul class="list-none p-0 m-0">
                 <li v-for="post in blogPosts" class="pb-5" :key="post._path">
                     <NuxtLink :to="post._path">
-                        <img class="postCoverImage"
+                        <img class="postImage inline-block align-middle"
                             v-if="post.coverImage" 
                             :src="post.coverImage"
                             :alt="post.altText"
                         />
-                        <img class="postCoverImage grayscale"
+                        <img class="postImage inline-block align-middle grayscale"
                             v-else
                             src="/images/vue logo.png"
                             alt="placeholder image"
@@ -63,7 +63,7 @@
 </template>
 
 <style scoped>
-.postCoverImage {
-    @apply max-w-20 mr-4 inline-block align-middle transition duration-500 hover:opacity-50
+.postImage {
+    @apply max-w-20 mr-4 transition duration-500 hover:opacity-50
 }
 </style>
