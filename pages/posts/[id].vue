@@ -16,18 +16,18 @@ const coverImage = ref(postData.coverImage);
 
 <template>
     <Head>
-        <Title>{{ postTitle }}</Title>
+        <Title>{{ postData.title }}</Title>
     </Head>
     <article>
-        <h1 class="text-3xl font-extrabold tracking-normal my-4 mx-0">{{ postTitle }}</h1>
+        <h1 class="text-3xl font-extrabold tracking-normal my-4 mx-0">{{ postData.title }}</h1>
         <div class="text-blue">
-            <Date :dateString="postDate" />
+            <Date :dateString="postData.date" />
         </div>
-        <div v-if="updatedDate" class="text-blue italic">
+        <div v-if="postData.updated" class="text-blue italic">
             <p class="inline">Updated: </p>
-            <Date :dateString="updatedDate" />
+            <Date :dateString="postData.updated" />
         </div>
-        <img v-if="coverImage" class="my-4" :src="coverImage" />
+        <img v-if="postData.coverImage" class="my-4" :src="postData.coverImage" />
         <ContentDoc />
     </article>
 </template>

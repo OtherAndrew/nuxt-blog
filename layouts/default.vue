@@ -1,5 +1,5 @@
 <script setup>
-const name = ref("Andrew");
+const name = "Andrew";
 
 const route = useRoute();
 

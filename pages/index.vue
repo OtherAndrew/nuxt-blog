@@ -13,14 +13,14 @@
         return `Cover image for ${fileName}`;
     }
 
-    const addAltText = data.value.map(p => (
+    const blogPosts = data.value.map(p => (
         {
             ...p,
             altText: generateAltText(p._path),
         }
     ));
 
-    const blogPosts = ref(addAltText);
+    // const blogPosts = ref(addAltText);
 </script>
 
 <template>
