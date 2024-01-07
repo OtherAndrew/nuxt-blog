@@ -32,7 +32,7 @@ const coverImage = ref(postData.coverImage);
     </article>
 </template>
 
-<style>
+<style scoped>
 img {
     @apply max-w-lg block;
 }

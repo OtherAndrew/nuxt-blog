@@ -68,7 +68,7 @@ const atHome = computed(() => route.path === '/')
     </div>
 </template>
 
-<style>
+<style scoped>
 .centered {
     @apply flex flex-col items-center;
 }
