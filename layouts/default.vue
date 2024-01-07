@@ -54,10 +54,9 @@ const atHome = computed(() => route.path === '/')
             </div>
             <div class="centered">
                 <NuxtLink to="/about">About</NuxtLink>
-                <NuxtLink to="https://github.com/OtherAndrew/nuxt-blog">
-                    <img
-                        src="/images/GitHub-Mark-ea2971cee799.png"
-                        class="rounded-full"
+                <NuxtLink to="https://github.com/OtherAndrew/nuxt-blog" class="pt-1">
+                    <img class="transition duration-500 opacity-50 hover:opacity-100"
+                        src="/images/github-mark-white.png"
                         height="32"
                         width="32"
                         alt="GitHub link"

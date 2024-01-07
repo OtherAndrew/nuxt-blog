@@ -28,6 +28,6 @@ const post = reactive(props.post);
 
 <style scoped>
 .postImage {
-    @apply max-w-20 mr-4 transition duration-500 hover:opacity-50
+    @apply max-w-16 mr-4 transition duration-500 opacity-50 hover:opacity-100
 }
 </style>
