@@ -14,6 +14,7 @@ const postData = reactive(data.value);
         <Title>{{ postData.title }}</Title>
     </Head>
     <article>
+        <img v-if="postData.coverImage" :src="postData.coverImage" />
         <h1 class="text-3xl font-extrabold tracking-normal my-4 mx-0">{{ postData.title }}</h1>
         <div class="text-blue">
             <Date :dateString="postData.date" />
@@ -22,13 +23,12 @@ const postData = reactive(data.value);
             <p class="inline">Updated: </p>
             <Date :dateString="postData.updated" />
         </div>
-        <img v-if="postData.coverImage" class="my-4" :src="postData.coverImage" />
         <ContentDoc />
     </article>
 </template>
 
 <style>
 img {
-    @apply max-w-lg block;
+    @apply max-w-lg block mx-auto;
 }
 </style>
