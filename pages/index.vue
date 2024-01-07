@@ -1,6 +1,4 @@
 <script setup>
-    import BlogLink from "../components/BlogLink.vue";
-
     const { data } = await useAsyncData(() => 
         queryContent('posts') 
             .only(["_path", "title", "date", "coverImage"])
@@ -13,14 +11,18 @@
         return `Cover image for ${fileName}`;
     }
 
-    const blogPosts = data.value.map(p => (
-        {
-            ...p,
-            altText: generateAltText(p._path),
+    const addAltText = data.value.map(p => {
+        if ("coverImage" in p) {
+            return {
+                ...p,
+                altText: generateAltText(p._path),
+            };
+        } else {
+            return p;
         }
-    ));
+    });
 
-    // const blogPosts = ref(addAltText);
+    const blogPosts = reactive(addAltText);
 </script>
 
 <template>

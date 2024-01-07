@@ -6,12 +6,7 @@ const { data } = await useAsyncData(() =>
      queryContent(`posts/${route.params.id}`)
         .findOne()
 );
-const postData = data.value;
-
-const postTitle = ref(postData.title);
-const postDate = ref(postData.date);
-const updatedDate = ref(postData.updated);
-const coverImage = ref(postData.coverImage);
+const postData = reactive(data.value);
 </script>
 
 <template>
@@ -32,7 +27,7 @@ const coverImage = ref(postData.coverImage);
     </article>
 </template>
 
-<style scoped>
+<style>
 img {
     @apply max-w-lg block;
 }
