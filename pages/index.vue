@@ -3,22 +3,22 @@
 
     const { data } = await useAsyncData(() => 
         queryContent('posts') 
-            // .only(["_path", "title", "date", "coverImage"])
+            .only(["_path", "title", "date", "coverImage"])
             .sort({ date: -1 })
             .find()
     );
 
-    function generateAltText(file) {
-        const fileName = file
-            .split("/").at(-1) // get file name
-            .split(".").at(0); // strip extension
+    function generateAltText(path) {
+        const fileName = path.split("/").at(-1);
         return `Cover image for ${fileName}`;
     }
+
+    console.log(data.value)
 
     const addAltText = data.value.map(p => (
         {
             ...p,
-            altText: generateAltText(p._file)
+            altText: generateAltText(p._path),
         }
     ));
 
