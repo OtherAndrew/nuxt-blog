@@ -4,7 +4,7 @@ const dracula = require('tailwind-dracula/colors')
 
 export default {
   corePlugins: {
-    preflight: false, // to render markdown correctly
+    // preflight: false, // to render markdown correctly
   },
   content: [
     "./components/**/*.{js,vue,ts}",

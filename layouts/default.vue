@@ -7,7 +7,7 @@ const atHome = computed(() => route.path === '/')
 </script>
 
 <template>
-    <div class="max-w-xl py-0 px-4 mt-12 mb-24 mx-auto">
+    <div class="max-w-xl mt-12 mb-24 mx-auto px-4">
         <Head>
             <Link rel="icon" href="/favicon.ico" />
             <meta
@@ -24,7 +24,7 @@ const atHome = computed(() => route.path === '/')
                     width="144"
                     alt="Profile picture"
                 />
-                <h1 class="text-4xl font-extrabold tracking-normal mt-4 mb-0 mx-0">
+                <h1 class="text-4xl font-extrabold tracking-normal mt-4">
                     {{ name }}
                 </h1>
             </div>
@@ -38,7 +38,7 @@ const atHome = computed(() => route.path === '/')
                         alt="Profile picture"
                     />
                 </NuxtLink>
-                <h2 class="text-2xl font-bold my-4 mx-0">
+                <h2 class="text-2xl font-bold my-4">
                     <NuxtLink to="/" class="text-inherit">
                         {{ name }}
                     </NuxtLink>
