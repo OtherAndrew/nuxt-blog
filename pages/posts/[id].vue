@@ -26,7 +26,7 @@ const postData = reactive(data.value);
         <ContentDoc class="markdown"/>
         <div v-if="postData.galleryImages" class="mt-8">
             <p class="text-blue">Images from this post:</p>
-            <ImageGrid :imgPathArray="postData.galleryImages" class="bg-darkest" />
+            <ImageGrid :images="postData.galleryImages" class="bg-darkest" />
         </div>
     </article>
 </template>
