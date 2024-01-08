@@ -3,5 +3,5 @@
         <Title>About</Title>
     </Head>
     <p>This is a dev blog ported over from React.js + Next.js (original blog <a href="https://github.com/OtherAndrew/nextjs-blog">here</a>). It uses Vue.js, Nuxt.js, and Tailwind CSS.</p>
-    <p>Andrew is a recent graduate from the University of Washington Tacoma with a B.S. in Computer Science. He is interested in a full-time career in web development. His other interests include heritage menswear and welted footwear.</p>
+    <p>Andrew is a recent graduate from the University of Washington Tacoma with a B.S. in Computer Science. He is interested in a full-time career in software development. His other interests include heritage menswear and welted footwear.</p>
 </template>
