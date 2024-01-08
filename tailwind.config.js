@@ -18,6 +18,7 @@ export default {
     extend: {
       colors: {
         // ...dracula //adds all the colors
+        "darkest": "#0e0d11",
       }
     },
   },
