@@ -42,15 +42,15 @@ const postData = reactive(data.value);
     }
 
     h1 {
-        @apply my-4 text-3xl font-extrabold
+        @apply mt-8 text-3xl font-extrabold
     }
 
     h2 {
-        @apply my-4 text-2xl font-extrabold
+        @apply mt-8 text-2xl font-extrabold
     }
 
     h3 {
-        @apply my-4 text-xl font-extrabold
+        @apply mt-8 text-xl font-extrabold
     }
 
     ol {
