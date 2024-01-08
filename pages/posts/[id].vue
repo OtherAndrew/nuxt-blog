@@ -1,5 +1,4 @@
 <script setup>
-
 const route = useRoute();
 
 const { data } = await useAsyncData(() =>
@@ -24,6 +23,7 @@ const postData = reactive(data.value);
             <Date :dateString="postData.updated" />
         </div>
         <ContentDoc />
+        <Gallery v-if="postData.galleryImages" :imgPathArray="postData.galleryImages" class="bg-darkest"/>
     </article>
 </template>
 
