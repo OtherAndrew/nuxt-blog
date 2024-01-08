@@ -23,7 +23,10 @@ const postData = reactive(data.value);
             <Date :dateString="postData.updated" />
         </div>
         <ContentDoc class="markdown"/>
-        <Gallery v-if="postData.galleryImages" :imgPathArray="postData.galleryImages" class="bg-darkest"/>
+        <div v-if="postData.galleryImages" class="mt-8">
+            <p class="text-blue">Images from this post:</p>
+            <ImageGrid :imgPathArray="postData.galleryImages" class="bg-darkest" />
+        </div>
     </article>
 </template>
 
