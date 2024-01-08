@@ -33,10 +33,10 @@
         <section class="text-xl text-center">
             <p>Lean, mean, JS machine.</p> 
         </section>
-        <section class="text-xl pt-px">
-            <h2 class="text-2xl font-bold my-4 mx-0">Posts</h2>
-            <ul class="list-none p-0 m-0">
-                <li v-for="post in blogPosts" class="pb-5" :key="post._path">
+        <section class="text-xl">
+            <h2 class="text-2xl font-bold my-4">Posts</h2>
+            <ul>
+                <li v-for="post in blogPosts" class="my-4" :key="post._path">
                     <PostLink :post="post" />
                 </li>
             </ul>

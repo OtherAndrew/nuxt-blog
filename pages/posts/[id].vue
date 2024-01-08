@@ -42,31 +42,35 @@ const postData = reactive(data.value);
     }
 
     h1 {
-        @apply mt-4 text-3xl font-extrabold
+        @apply my-4 text-3xl font-extrabold
     }
 
     h2 {
-        @apply mt-4 text-2xl font-extrabold
+        @apply my-4 text-2xl font-extrabold
     }
 
     h3 {
-        @apply mt-4 text-xl font-extrabold
+        @apply my-4 text-xl font-extrabold
     }
 
     ol {
-        @apply list-decimal list-outside mt-2 ml-5
+        @apply list-decimal list-outside my-2 ml-5
     }
 
     ul {
-        @apply list-disc list-outside mt-2 ml-6
+        @apply list-disc list-outside my-2 ml-6
     }
 
     li {
-        @apply mt-2
+        @apply my-2
     }
 
     p {
-        @apply mt-4
+        @apply my-4
+    }
+
+    pre {
+        @apply bg-darkest my-4 pl-2
     }
 }
 
