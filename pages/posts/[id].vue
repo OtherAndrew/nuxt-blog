@@ -5,6 +5,7 @@ const { data } = await useAsyncData(() =>
      queryContent(`posts/${route.params.id}`)
         .findOne()
 );
+
 const postData = reactive(data.value);
 </script>
 
@@ -31,7 +32,6 @@ const postData = reactive(data.value);
 </template>
 
 <style>
-
 .markdown {
     img {
         @apply max-w-sm md:max-w-lg mx-auto;
@@ -76,6 +76,4 @@ const postData = reactive(data.value);
         @apply bg-darkest my-4 pl-2
     }
 }
-
-
 </style>
