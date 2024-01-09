@@ -6,7 +6,7 @@ const post = reactive(props.post);
 
 <template>
     <div class="flex flex-row items-start p-2">
-        <NuxtLink :to="post._path" class="flex mr-4 max-w-16 min-h-16 rounded-md transition duration-500   hover:bg-pink">
+        <NuxtLink :to="post._path" class="flex mr-4 max-w-16 min-h-16 rounded-md">
             <img v-if="post.coverImage"
                 class="object-scale-down rounded-md"
                 :src="post.coverImage"
