@@ -13,12 +13,14 @@ const postData = reactive(data.value);
 if (postData.coverImage) {
     postData.coverAltText = `Cover image for ${getFileName(postData._path)}`
 }
+
+useSeoMeta({
+    ogTitle: "Dev Blog",
+    ogImage: postData.coverImage ? postData.coverImage : "/icon-green.png",
+})
 </script>
 
 <template>
-    <Head>
-        <Title>{{ postData.title }}</Title>
-    </Head>
     <article>
         <img v-if="postData.coverImage" 
             class="mx-auto mb-8"
