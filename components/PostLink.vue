@@ -6,13 +6,13 @@ const post = reactive(props.post);
 
 <template>
     <NuxtLink :to="post._path">
-        <img class="max-w-16 mr-4 inline-block align-middle"
-            v-if="post.coverImage" 
+        <img v-if="post.coverImage" 
+            class="max-w-16 mr-4 inline-block align-middle"
             :src="post.coverImage"
             :alt="post.altText"
         />
-        <img class="max-w-16 mr-4 inline-block align-middle grayscale"
-            v-else
+        <img v-else
+            class="max-w-16 mr-4 inline-block align-middle grayscale"
             src="/images/vue logo.png"
             alt="Placeholder image"
         />

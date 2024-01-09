@@ -14,7 +14,10 @@ const postData = reactive(data.value);
         <Title>{{ postData.title }}</Title>
     </Head>
     <article>
-        <img v-if="postData.coverImage" :src="postData.coverImage"/>
+        <img v-if="postData.coverImage" 
+            :src="postData.coverImage"
+            alt="Cover image"
+        />
         <h1 class="mt-4 text-3xl font-extrabold">{{ postData.title }}</h1>
         <div class="text-blue mt-1">
             <Date :dateString="postData.date" />
