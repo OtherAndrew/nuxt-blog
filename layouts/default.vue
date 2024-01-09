@@ -6,14 +6,14 @@ const route = useRoute();
 const atHome = computed(() => route.path === '/');
 
 useSeoMeta({
-    // <Link rel="icon" href="/favicon.ico" />
     title: "Dev Blog",
     description: "Andrew's dev blog.",
+    ogDescription: "Andrew's dev blog.",
+    ogImage: "/icon-green.png",
     link: {
         rel: "icon",
         href: "/favicon.ico",
     },
-    ogImage: "/icon-green.png",
 });
 </script>
 
