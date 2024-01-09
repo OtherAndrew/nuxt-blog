@@ -7,7 +7,7 @@ const atHome = computed(() => route.path === '/')
 </script>
 
 <template>
-    <div class="max-w-xl mt-12 mb-24 mx-auto p-6 bg-darker rounded-3xl">
+    <div class="max-w-xl mt-12 mb-24 mx-auto p-8 bg-darker rounded-3xl">
         <Head>
             <Link rel="icon" href="/favicon.ico" />
             <meta
