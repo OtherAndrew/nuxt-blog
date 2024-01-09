@@ -28,7 +28,7 @@
     </Head>
     <div>
         <section class="text-xl text-center">
-            <p>Lean, mean, JS machine.</p> 
+            <p>Lean, mean, programming machine.</p> 
         </section>
         <section class="text-xl">
             <h2 class="text-2xl font-bold my-4">Posts</h2>
