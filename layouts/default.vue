@@ -52,9 +52,9 @@ const atHome = computed(() => route.path === '/')
             <div v-if="!atHome" class="mt-12">
                 <NuxtLink to="/">← Back to home</NuxtLink>
             </div>
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center mt-4">
                 <NuxtLink to="/about">About</NuxtLink>
-                <NuxtLink to="https://github.com/OtherAndrew/nuxt-blog" class="pt-1">
+                <NuxtLink to="https://github.com/OtherAndrew/nuxt-blog" class="mt-1">
                     <img class="transition duration-500 opacity-50 hover:opacity-100"
                         src="/images/github-mark-white.png"
                         height="32"
