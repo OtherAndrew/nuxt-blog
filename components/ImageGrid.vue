@@ -1,16 +1,12 @@
 <script setup>
-const props = defineProps(["images"]);
+import { getFileName } from '~/src/utils';
 
-function generateAltText(path) {
-    return path
-        .split("/").at(-1)
-        .split(".").at(0);
-}
+const props = defineProps(["images"]);
 
 const gridImages = ref(props.images.map(path => {
     return {
         path: path,
-        altText: generateAltText(path),
+        altText: getFileName(path),
     }
 }));
 </script>
