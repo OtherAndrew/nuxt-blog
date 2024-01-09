@@ -21,6 +21,7 @@ if (postData.coverImage) {
     </Head>
     <article>
         <img v-if="postData.coverImage" 
+            class="max-w-md mx-auto"
             :src="postData.coverImage"
             :alt="postData.coverAltText"
         />
@@ -35,15 +36,15 @@ if (postData.coverImage) {
         <ContentDoc class="markdown"/>
         <div v-if="postData.galleryImages" class="mt-8">
             <p class="text-blue">Images from this post:</p>
-            <ImageGrid :images="postData.galleryImages" class="bg-darkest" />
+            <ImageGrid :images="postData.galleryImages" class="bg-darkest rounded-xl" />
         </div>
     </article>
 </template>
 
 <style>
 .markdown {
-    img {
-        @apply max-w-sm md:max-w-lg mx-auto;
+    p > img {
+        @apply max-w-md mx-auto;
     }
 
     h1,
