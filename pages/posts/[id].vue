@@ -1,4 +1,6 @@
 <script setup>
+import { getFileName } from '~/src/utils';
+
 const route = useRoute();
 
 const { data } = await useAsyncData(() =>
@@ -7,6 +9,10 @@ const { data } = await useAsyncData(() =>
 );
 
 const postData = reactive(data.value);
+
+if (postData.coverImage) {
+    postData.coverAltText = `Cover image for ${getFileName(postData._path)}`
+}
 </script>
 
 <template>
@@ -16,7 +22,7 @@ const postData = reactive(data.value);
     <article>
         <img v-if="postData.coverImage" 
             :src="postData.coverImage"
-            alt="Cover image"
+            :alt="postData.coverAltText"
         />
         <h1 class="mt-4 text-3xl font-extrabold">{{ postData.title }}</h1>
         <div class="text-blue mt-1">

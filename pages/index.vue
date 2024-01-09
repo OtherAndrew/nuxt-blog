@@ -1,4 +1,6 @@
 <script setup>
+    import { getFileName } from '~/src/utils';
+
     const { data } = await useAsyncData(() => 
         queryContent('posts') 
             .only(["_path", "title", "date", "coverImage"])
@@ -6,18 +8,18 @@
             .find()
     );
 
-    const addAltText = data.value.map(post => {
+    const postsWithAltText = data.value.map(post => {
         if ("coverImage" in post) {
             return {
                 ...post,
-                altText: `Cover image for ${post.title}`,
+                altText: `Cover image for ${getFileName(post._path)}`,
             };
         } else {
             return post;
         }
     });
 
-    const blogPosts = reactive(addAltText);
+    const blogPosts = reactive(postsWithAltText);
 </script>
 
 <template>
