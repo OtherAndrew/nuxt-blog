@@ -27,8 +27,8 @@
         <Title>Dev Blog</Title>
     </Head>
     <div>
-        <section class="text-xl text-center">
-            <p>Lean, mean, programming machine.</p> 
+        <section>
+            <p class="text-xl text-center mt-2 mb-8">Lean, mean, programming machine.</p> 
         </section>
         <section>
             <h2 class="text-2xl font-bold my-4">Posts</h2>

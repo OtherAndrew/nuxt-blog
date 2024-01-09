@@ -38,7 +38,7 @@ const atHome = computed(() => route.path === '/')
                         alt="Profile picture"
                     />
                 </NuxtLink>
-                <h2 class="text-2xl font-bold my-4">
+                <h2 class="text-2xl font-bold mt-4 mb-8">
                     <NuxtLink to="/" class="text-inherit">
                         {{ name }}
                     </NuxtLink>
