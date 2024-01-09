@@ -12,7 +12,7 @@ const gridImages = reactive(props.images.map(path => {
 </script>
 
 <template>
-    <div class="grid grid-cols-3 sm:grid-cols-4 gap-3 p-3">
+    <div class="grid grid-cols-3 sm:grid-cols-4 gap-2 p-2 sm:gap-3 sm:p-3">
         <NuxtLink v-for="image in gridImages" :to="image.path" class="flex">
             <img class="object-cover transition duration-500 hover:opacity-80" 
                 :src="image.path"
