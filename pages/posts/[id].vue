@@ -14,13 +14,12 @@ if (postData.coverImage) {
     postData.coverAltText = `Cover image for ${getFileName(postData._path)}`
 }
 
-// useSeoMeta({
-//     ogTitle: `${postData.title} - Dev Blog`,
-//     ogImage: postData.coverImage ? postData.coverImage : "/icon-green.png",
-//     ogImageAlt: `Cover image for ${postData.title}`,
-//     twitterImage: postData.coverImage ? postData.coverImage : "/icon-green.png",
-//     twitterImageAlt: `Cover image for ${postData.title}`,
-// })
+useSeoMeta({
+    ogImage: postData.coverImage ? postData.coverImage : "/icon-green.png",
+    ogImageAlt: `Cover image for ${postData.title}`,
+    // twitterImage: postData.coverImage ? postData.coverImage : "/icon-green.png",
+    // twitterImageAlt: `Cover image for ${postData.title}`,
+})
 </script>
 
 <template>
