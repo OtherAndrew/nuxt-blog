@@ -14,7 +14,7 @@ const post = reactive(props.post);
         <img class="max-w-16 mr-4 inline-block align-middle grayscale"
             v-else
             src="/images/vue logo.png"
-            alt="placeholder image"
+            alt="Placeholder image"
         />
     </NuxtLink>
     <div class="inline-block align-middle">

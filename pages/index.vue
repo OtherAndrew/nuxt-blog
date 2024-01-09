@@ -6,16 +6,11 @@
             .find()
     );
 
-    function generateAltText(path) {
-        const fileName = path.split("/").at(-1);
-        return `Cover image for ${fileName}`;
-    }
-
     const addAltText = data.value.map(post => {
         if ("coverImage" in post) {
             return {
                 ...post,
-                altText: generateAltText(post._path),
+                altText: `Cover image for ${post.title}`,
             };
         } else {
             return post;
