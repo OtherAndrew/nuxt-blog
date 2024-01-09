@@ -3,18 +3,22 @@ const name = ref("Andrew");
 
 const route = useRoute();
 
-const atHome = computed(() => route.path === '/')
+const atHome = computed(() => route.path === '/');
+
+useSeoMeta({
+    // <Link rel="icon" href="/favicon.ico" />
+    title: "Dev Blog",
+    description: "Andrew's dev blog.",
+    link: {
+        rel: "icon",
+        href: "/favicon.ico",
+    },
+    ogImage: "/icon-green.png",
+});
 </script>
 
 <template>
     <div class="max-w-md sm:max-w-xl mt-12 mb-24 mx-auto p-8 bg-darker rounded-3xl">
-        <Head>
-            <Link rel="icon" href="/favicon.ico" />
-            <meta
-                name="description"
-                content="Nuxt blog"
-            />
-        </Head>
         <header>
             <div v-if="atHome" class="flex flex-col items-center">
                 <img
