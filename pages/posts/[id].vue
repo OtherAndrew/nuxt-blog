@@ -66,7 +66,7 @@ if (postData.coverImage) {
     }
 
     ol {
-        @apply list-decimal list-outside my-2 ml-5
+        @apply list-decimal list-outside my-2 ml-6
     }
 
     ul {

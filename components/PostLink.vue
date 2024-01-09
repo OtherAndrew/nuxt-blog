@@ -5,23 +5,25 @@ const post = reactive(props.post);
 </script>
 
 <template>
-    <NuxtLink :to="post._path">
-        <img v-if="post.coverImage" 
-            class="max-w-16 mr-4 inline-block align-middle"
-            :src="post.coverImage"
-            :alt="post.altText"
-        />
-        <img v-else
-            class="max-w-16 mr-4 inline-block align-middle grayscale"
-            src="/images/vue logo.png"
-            alt="Placeholder image"
-        />
-    </NuxtLink>
-    <div class="inline-block align-middle">
-        <NuxtLink :to="post._path">{{ post.title }}</NuxtLink>
-        <br />
-        <small class="text-blue">
-            <Date :dateString="post.date" />
-        </small>
+    <div class="flex flex-row items-start p-2">
+        <NuxtLink :to="post._path" class="flex mr-4 max-w-16 min-h-16 rounded-md transition duration-500   hover:bg-pink">
+            <img v-if="post.coverImage"
+                class="object-scale-down rounded-md"
+                :src="post.coverImage"
+                :alt="post.altText"
+            />
+            <img v-else
+                class="object-scale-down rounded-md"
+                src="/images/vue logo.png"
+                alt="Placeholder image"
+            />
+        </NuxtLink>
+        <div>
+            <NuxtLink :to="post._path">{{ post.title }}</NuxtLink>
+            <br />
+            <small class="text-blue">
+                <Date :dateString="post.date" />
+            </small>
+        </div>
     </div>
 </template>

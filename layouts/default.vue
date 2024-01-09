@@ -7,7 +7,7 @@ const atHome = computed(() => route.path === '/')
 </script>
 
 <template>
-    <div class="max-w-xl mt-12 mb-24 mx-auto px-4">
+    <div class="max-w-xl mt-12 mb-24 mx-auto p-6 bg-darker rounded-3xl">
         <Head>
             <Link rel="icon" href="/favicon.ico" />
             <meta
@@ -16,7 +16,7 @@ const atHome = computed(() => route.path === '/')
             />
         </Head>
         <header>
-            <div v-if="atHome" class="centered">
+            <div v-if="atHome" class="flex flex-col items-center">
                 <img
                     src="/images/profile.jpg"
                     class="rounded-full"
@@ -28,7 +28,7 @@ const atHome = computed(() => route.path === '/')
                     {{ name }}
                 </h1>
             </div>
-            <div v-else class="centered">
+            <div v-else class="flex flex-col items-center">
                 <NuxtLink to="/">
                     <img
                         src="/images/profile.jpg"
@@ -52,7 +52,7 @@ const atHome = computed(() => route.path === '/')
             <div v-if="!atHome" class="mt-12">
                 <NuxtLink to="/">← Back to home</NuxtLink>
             </div>
-            <div class="centered">
+            <div class="flex flex-col items-center">
                 <NuxtLink to="/about">About</NuxtLink>
                 <NuxtLink to="https://github.com/OtherAndrew/nuxt-blog" class="pt-1">
                     <img class="transition duration-500 opacity-50 hover:opacity-100"
@@ -66,9 +66,3 @@ const atHome = computed(() => route.path === '/')
         </footer>
     </div>
 </template>
-
-<style scoped>
-.centered {
-    @apply flex flex-col items-center;
-}
-</style>
