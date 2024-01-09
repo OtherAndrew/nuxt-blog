@@ -21,7 +21,7 @@ if (postData.coverImage) {
     </Head>
     <article>
         <img v-if="postData.coverImage" 
-            class="mx-auto"
+            class="mx-auto mb-8"
             :src="postData.coverImage"
             :alt="postData.coverAltText"
         />
