@@ -6,12 +6,12 @@ const post = reactive(props.post);
 
 <template>
     <NuxtLink :to="post._path">
-        <img class="postImage inline-block align-middle"
+        <img class="max-w-16 mr-4 inline-block align-middle"
             v-if="post.coverImage" 
             :src="post.coverImage"
             :alt="post.altText"
         />
-        <img class="postImage inline-block align-middle grayscale"
+        <img class="max-w-16 mr-4 inline-block align-middle grayscale"
             v-else
             src="/images/vue logo.png"
             alt="placeholder image"
@@ -25,9 +25,3 @@ const post = reactive(props.post);
         </small>
     </div>
 </template>
-
-<style scoped>
-.postImage {
-    @apply max-w-16 mr-4
-}
-</style>
