@@ -11,6 +11,7 @@ useSeoMeta({
     description: "Andrew's dev blog.",
     ogDescription: "Andrew's dev blog.",
     ogImage: "/icon-green.png",
+    ogImageAlt: "Nuxt logo",
     link: {
         rel: "icon",
         href: "/favicon.ico",

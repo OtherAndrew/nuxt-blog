@@ -17,6 +17,8 @@ if (postData.coverImage) {
 useSeoMeta({
     ogTitle: "Dev Blog",
     ogImage: postData.coverImage ? postData.coverImage : "/icon-green.png",
+    ogImageAlt: `Cover image for ${postData.title}`,
+    twitterImage: postData.coverImage ? postData.coverImage : "/icon-green.png",
 })
 </script>
 
