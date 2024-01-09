@@ -21,7 +21,7 @@ if (postData.coverImage) {
     </Head>
     <article>
         <img v-if="postData.coverImage" 
-            class="max-w-md mx-auto"
+            class="mx-auto"
             :src="postData.coverImage"
             :alt="postData.coverAltText"
         />
@@ -44,7 +44,7 @@ if (postData.coverImage) {
 <style>
 .markdown {
     p > img {
-        @apply max-w-md mx-auto;
+        @apply mx-auto;
     }
 
     h1,
