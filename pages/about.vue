@@ -1,7 +1,13 @@
+<script setup>
+useSeoMeta({
+    title: "About",
+    ogTitle: "About",
+    description: "About Andrew's dev blog.",
+    ogDescription: "About Andrew's dev blog.",
+});
+</script>
+
 <template>
-    <Head>
-        <Title>About</Title>
-    </Head>
     <h1 class="text-3xl font-extrabold">About</h1>
 
     <p>This is a dev blog ported over from React.js + Next.js (original blog <NuxtLink to="https://nextjs-blog-otherandrew.vercel.app">here</NuxtLink>). It uses Vue.js, Nuxt.js, and Tailwind CSS.</p>

@@ -12,12 +12,11 @@ const postData = reactive(data.value);
 
 if (postData.coverImage) {
     postData.coverAltText = `Cover image for ${getFileName(postData._path)}`
+    useSeoMeta({
+        ogImage: postData.coverImage,
+        ogImageAlt: postData.coverAltText,
+    });
 }
-
-useSeoMeta({
-    ogImage: postData.coverImage ? postData.coverImage : "/icon-green.png",
-    ogImageAlt: postData.coverAltText ? postData.coverAltText : "Nuxt logo",
-});
 </script>
 
 <template>

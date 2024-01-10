@@ -10,8 +10,8 @@ useSeoMeta({
     ogTitle: "Dev Blog",
     description: "Andrew's dev blog.",
     ogDescription: "Andrew's dev blog.",
-    ogImage: "/icon-green.png",
-    ogImageAlt: "Nuxt logo",
+    ogImage: "/profile.jpg",
+    ogImageAlt: "Profile picture",
     link: {
         rel: "icon",
         href: "/favicon.ico",
