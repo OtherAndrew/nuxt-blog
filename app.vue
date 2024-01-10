@@ -13,7 +13,7 @@ useHead({
 <style>
 .page-enter-active,
 .page-leave-active {
-  @apply transition;
+  @apply transition duration-[250ms];
 }
 .page-enter-from,
 .page-leave-to {
