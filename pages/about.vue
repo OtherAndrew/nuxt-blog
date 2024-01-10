@@ -15,7 +15,7 @@ useHead({
 
 <template>
     <div>
-        <h1 class="text-3xl font-extrabold">About</h1>
+        <h1 class="text-3xl font-extrabold my-4">About</h1>
 
         <p>This is a dev blog ported over from React.js + Next.js (original blog <NuxtLink to="https://nextjs-blog-otherandrew.vercel.app">here</NuxtLink>). It uses Vue.js, Nuxt.js, and Tailwind CSS.</p>
 

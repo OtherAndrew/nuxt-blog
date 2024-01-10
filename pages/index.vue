@@ -37,16 +37,11 @@ useHead({
 
 <template>
     <div>
-        <section>
-            <p class="text-xl text-center mt-2 mb-8">Lean, mean, programming machine.</p> 
-        </section>
-        <section>
-            <h2 class="text-2xl font-bold my-4">Posts</h2>
-            <ul class="text-xl">
-                <li v-for="post in blogPosts" class="my-2 rounded-xl transition duration-500 hover:bg-dark" :key="post._path">
-                    <PostLink :post="post" />
-                </li>
-            </ul>
-        </section>   
+        <h2 class="text-2xl font-bold my-4">Posts</h2>
+        <ul class="text-xl">
+            <li v-for="post in blogPosts" class="my-2 rounded-xl transition duration-500 hover:bg-dark" :key="post._path">
+                <PostLink :post="post" />
+            </li>
+        </ul> 
     </div>
 </template>

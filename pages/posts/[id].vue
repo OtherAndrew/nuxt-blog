@@ -26,7 +26,7 @@ useHead({
 <template>
     <article>
         <img v-if="postData.coverImage" 
-            class="mx-auto mb-8"
+            class="mx-auto my-8"
             :src="postData.coverImage"
             :alt="postData.coverAltText"
         />

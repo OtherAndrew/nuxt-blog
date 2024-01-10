@@ -13,26 +13,23 @@ const atAbout = computed(() => route.path === '/about')
             <div v-if="atHome" class="flex flex-col items-center">
                 <img
                     src="/images/profile.jpg"
-                    class="rounded-full"
-                    height="144"
-                    width="144"
+                    class="rounded-full size-36"
                     alt="Profile picture"
                 />
-                <h1 class="text-4xl font-extrabold tracking-normal mt-4">
+                <h1 class="text-4xl font-extrabold mt-4">
                     {{ name }}
                 </h1>
+                <p class="text-xl mt-2">Lean, mean, programming machine.</p> 
             </div>
             <div v-else class="flex flex-col items-center">
                 <NuxtLink to="/">
                     <img
                         src="/images/profile.jpg"
-                        class="rounded-full"
-                        height="108"
-                        width="108"
+                        class="rounded-full size-28"
                         alt="Profile picture"
                     />
                 </NuxtLink>
-                <h2 class="text-2xl font-bold mt-4 mb-8">
+                <h2 class="text-2xl font-bold mt-4">
                     <NuxtLink to="/" class="text-inherit">
                         {{ name }}
                     </NuxtLink>
