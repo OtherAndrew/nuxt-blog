@@ -24,4 +24,4 @@ logs
 !.env.example
 
 # Markdown test files
-content/posts/test-*.md
+content/posts/test--*.md
