@@ -1,31 +1,35 @@
 <script setup>
-    import { getFileName } from '~/src/utils';
+import { getFileName } from '~/src/utils';
 
-    const { data } = await useAsyncData(() => 
-        queryContent('posts') 
-            .only(["_path", "title", "date", "coverImage"])
-            .sort({ date: -1 })
-            .find()
-    );
+const { data } = await useAsyncData(() => 
+    queryContent('posts') 
+        .only(["_path", "title", "date", "coverImage"])
+        .sort({ date: -1 })
+        .find()
+);
 
-    const postsWithAltText = data.value.map(post => {
-        if ("coverImage" in post) {
-            return {
-                ...post,
-                altText: `Cover image for ${getFileName(post._path)}`,
-            };
-        } else {
-            return post;
-        }
-    });
+const postsWithAltText = data.value.map(post => {
+    if ("coverImage" in post) {
+        return {
+            ...post,
+            altText: `Cover image for ${getFileName(post._path)}`,
+        };
+    } else {
+        return post;
+    }
+});
 
-    const blogPosts = reactive(postsWithAltText);
+const blogPosts = reactive(postsWithAltText);
+
+useSeoMeta({
+    title: "Dev Blog",
+    ogTitle: "Dev Blog",
+    description: "Andrew's dev blog.",
+    ogDescription: "Andrew's dev blog.",
+});
 </script>
 
 <template>
-    <Head>
-        <Title>Dev Blog</Title>
-    </Head>
     <div>
         <section>
             <p class="text-xl text-center mt-2 mb-8">Lean, mean, programming machine.</p> 
