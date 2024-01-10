@@ -1,11 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const dracula = require('tailwind-dracula/colors')
-
 export default {
-  corePlugins: {
-    // preflight: false, // to render markdown correctly
-  },
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -17,7 +12,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        // ...dracula //adds all the colors
         "darkest": "#0e0d11",
       }
     },
