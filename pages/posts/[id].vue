@@ -48,8 +48,12 @@ useHead({
 
 <style>
 .markdown {
-    p > img {
-        @apply mx-auto;
+    blockquote {
+        @apply my-4 py-2 pl-3 pr-2 border-l-4 border-blue bg-dark
+    }
+
+    blockquote > p {
+        @apply my-0
     }
 
     h1,
@@ -71,24 +75,28 @@ useHead({
         @apply mt-8 text-xl font-extrabold
     }
 
-    ol {
-        @apply list-decimal list-outside my-2 ml-6
-    }
-
-    ul {
-        @apply list-disc list-outside my-2 ml-6
-    }
-
     li {
         @apply my-2
+    }
+
+    ol {
+        @apply list-decimal list-outside my-2 ml-6
     }
 
     p {
         @apply my-4
     }
 
+    p > img {
+        @apply mx-auto;
+    }
+
     pre {
-        @apply bg-darkest my-4 pl-2
+        @apply my-4 py-2 px-4 bg-darkest 
+    }
+    
+    ul {
+        @apply list-disc list-outside my-2 ml-6
     }
 }
 </style>
