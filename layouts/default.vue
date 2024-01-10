@@ -4,6 +4,7 @@ const name = ref("Andrew");
 const route = useRoute();
 
 const atHome = computed(() => route.path === '/');
+const atAbout = computed(() => route.path === '/about')
 </script>
 
 <template>
@@ -46,7 +47,7 @@ const atHome = computed(() => route.path === '/');
                 <NuxtLink to="/">← Back to home</NuxtLink>
             </div>
             <div class="flex flex-col items-center mt-4">
-                <NuxtLink v-if="$route.name !== 'about'" to="/about" class="mb-1">
+                <NuxtLink v-if="!atAbout" to="/about" class="mb-1">
                     About
                 </NuxtLink>
                 <NuxtLink to="https://github.com/OtherAndrew/nuxt-blog">
