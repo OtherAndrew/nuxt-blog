@@ -30,7 +30,7 @@ useHead({
             :src="postData.coverImage"
             :alt="postData.coverAltText"
         />
-        <h1 class="text-3xl font-extrabold">{{ postData.title }}</h1>
+        <h1 class="text-3xl font-extrabold mt-8">{{ postData.title }}</h1>
         <div class="text-blue mt-1">
             <Date :dateString="postData.date" />
         </div>
