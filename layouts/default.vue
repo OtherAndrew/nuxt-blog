@@ -4,15 +4,6 @@ const name = ref("Andrew");
 const route = useRoute();
 
 const atHome = computed(() => route.path === '/');
-
-useSeoMeta({
-    ogImage: "/images/profile.jpg",
-    ogImageAlt: "Profile picture",
-    link: {
-        rel: "icon",
-        href: "/favicon.ico",
-    },
-});
 </script>
 
 <template>

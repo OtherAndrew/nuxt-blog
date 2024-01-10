@@ -5,6 +5,9 @@ useSeoMeta({
     description: "About Andrew's dev blog.",
     ogDescription: "About Andrew's dev blog.",
 });
+useHead({
+    titleTemplate: "%s | Dev Blog",
+});
 </script>
 
 <template>

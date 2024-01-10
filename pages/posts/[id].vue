@@ -17,6 +17,10 @@ if (postData.coverImage) {
         ogImageAlt: postData.coverAltText,
     });
 }
+
+useHead({
+    titleTemplate: `${postData.title} | Dev Blog`
+});
 </script>
 
 <template>
