@@ -24,14 +24,8 @@ const blogPosts = reactive(postsWithAltText);
 useSeoMeta({
     title: "Dev Blog",
     ogTitle: "Dev Blog",
-    description: "Andrew's Dev Blog.",
-    ogDescription: "Andrew's Dev Blog.",
-    ogImage: "/images/profile.jpg",
-    ogImageAlt: "Profile picture",
-    link: {
-        rel: "icon",
-        href: "/favicon.ico",
-    },
+    description: "Andrew's dev blog.",
+    ogDescription: "Andrew's dev blog.",
 });
 
 useHead({
