@@ -49,42 +49,42 @@ useHead({
 <style>
 .markdown {
     blockquote {
-        @apply my-4 py-2 pl-3 pr-2 border-l-4 border-blue bg-dark
+        @apply my-4 py-2 pl-3 pr-2 border-l-4 border-blue bg-dark selection:bg-darker;
     }
 
     blockquote > p {
-        @apply my-0
+        @apply my-0;
     }
 
     h1,
     h1 > a,
     h2 > a,
     h3 > a {
-        @apply text-light
+        @apply text-light;
     }
 
     h1 {
-        @apply mt-8 text-3xl font-extrabold
+        @apply mt-8 text-3xl font-extrabold;
     }
 
     h2 {
-        @apply mt-8 text-2xl font-extrabold
+        @apply mt-8 text-2xl font-extrabold;
     }
 
     h3 {
-        @apply mt-8 text-xl font-extrabold
+        @apply mt-8 text-xl font-extrabold;
     }
 
     li {
-        @apply my-2
+        @apply my-2;
     }
 
     ol {
-        @apply list-decimal list-outside my-2 ml-6
+        @apply list-decimal list-outside my-2 ml-6;
     }
 
     p {
-        @apply my-4
+        @apply my-4;
     }
 
     p > img {
@@ -92,11 +92,11 @@ useHead({
     }
 
     pre {
-        @apply my-4 py-2 px-4 bg-darkest 
+        @apply my-4 py-2 px-4 bg-darkest;
     }
     
     ul {
-        @apply list-disc list-outside my-2 ml-6
+        @apply list-disc list-outside my-2 ml-6;
     }
 }
 </style>

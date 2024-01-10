@@ -13,10 +13,10 @@ useHead({
 <style>
 .page-enter-active,
 .page-leave-active {
-  @apply transition
+  @apply transition;
 }
 .page-enter-from,
 .page-leave-to {
-  @apply opacity-0
+  @apply opacity-0;
 }
 </style>
