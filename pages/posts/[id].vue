@@ -16,10 +16,8 @@ if (postData.coverImage) {
 
 useSeoMeta({
     ogImage: postData.coverImage ? postData.coverImage : "/icon-green.png",
-    ogImageAlt: `Cover image for ${postData.title}`,
-    // twitterImage: postData.coverImage ? postData.coverImage : "/icon-green.png",
-    // twitterImageAlt: `Cover image for ${postData.title}`,
-})
+    ogImageAlt: postData.coverAltText ? postData.coverAltText : "Nuxt logo",
+});
 </script>
 
 <template>
