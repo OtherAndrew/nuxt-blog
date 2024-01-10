@@ -4,7 +4,10 @@ useSeoMeta({
     ogTitle: "About",
     description: "About Andrew's dev blog.",
     ogDescription: "About Andrew's dev blog.",
+    ogImage: "/images/profile.jpg",
+    ogImageAlt: "Profile picture",
 });
+
 useHead({
     titleTemplate: "%s | Dev Blog",
 });
