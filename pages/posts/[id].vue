@@ -64,15 +64,15 @@ useHead({
     }
 
     h1 {
-        @apply mt-8 text-3xl font-extrabold;
+        @apply mt-8 mb-4 text-3xl font-extrabold;
     }
 
     h2 {
-        @apply mt-8 text-2xl font-extrabold;
+        @apply mt-8 mb-4 text-2xl font-extrabold;
     }
 
     h3 {
-        @apply mt-8 text-xl font-extrabold;
+        @apply mt-8 mb-4 text-xl font-extrabold;
     }
 
     li {
@@ -80,7 +80,7 @@ useHead({
     }
 
     ol {
-        @apply list-decimal list-outside my-2 ml-6;
+        @apply my-4 list-decimal list-outside ml-6;
     }
 
     p {
@@ -96,7 +96,7 @@ useHead({
     }
     
     ul {
-        @apply list-disc list-outside my-2 ml-6;
+        @apply my-4 list-disc list-outside ml-6;
     }
 }
 </style>
