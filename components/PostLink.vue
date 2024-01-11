@@ -7,10 +7,10 @@ const post = ref(props.post);
 <template>
     <NuxtLink :to="post._path" class="flex flex-row items-start p-2">
         <div class="flex mr-4 max-w-16 min-h-16 rounded-md">
-            <img v-if="post.coverImage"
+            <img v-if="post.image"
                 class="object-scale-down rounded-md"
-                :src="post.coverImage"
-                :alt="post.altText"
+                :src="post.image.src"
+                :alt="post.image.alt"
             />
             <img v-else
                 class="object-scale-down rounded-md"
@@ -21,7 +21,7 @@ const post = ref(props.post);
         <div>
             <p class="my-0">{{ post.title }}</p>
             <small class="text-blue">
-                <Date :dateString="post.date" />
+                <Date :dateString="post.date.published" />
             </small>
         </div>
     </NuxtLink>

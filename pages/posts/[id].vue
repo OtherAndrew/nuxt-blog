@@ -1,6 +1,4 @@
 <script setup>
-import { getFileName } from '~/src/utils';
-
 const route = useRoute();
 
 const { data } = await useAsyncData(() =>
@@ -10,14 +8,6 @@ const { data } = await useAsyncData(() =>
 
 const postData = ref(data.value);
 
-if (postData.value.coverImage) {
-    postData.value.coverAltText = `Cover image for ${getFileName(postData.value._path)}`
-    useSeoMeta({
-        ogImage: postData.value.coverImage,
-        ogImageAlt: postData.value.coverAltText,
-    });
-}
-
 useHead({
     titleTemplate: `${postData.value.title} - Dev Blog`
 });
@@ -25,18 +15,18 @@ useHead({
 
 <template>
     <article>
-        <img v-if="postData.coverImage" 
+        <img v-if="postData.image" 
             class="mx-auto my-8"
-            :src="postData.coverImage"
-            :alt="postData.coverAltText"
+            :src="postData.image.src"
+            :alt="postData.image.alt"
         />
         <h1 class="text-3xl font-extrabold mt-8">{{ postData.title }}</h1>
         <div class="text-blue mt-1">
-            <Date :dateString="postData.date" />
+            <Date :dateString="postData.date.published" />
         </div>
-        <div v-if="postData.updated" class="text-blue italic">
+        <div v-if="postData.date.updated" class="text-blue italic">
             <p class="inline">Updated: </p>
-            <Date :dateString="postData.updated" />
+            <Date :dateString="postData.date.updated" />
         </div>
         <ContentDoc class="markdown"/>
         <div v-if="postData.galleryImages" class="mt-8">

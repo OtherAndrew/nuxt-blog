@@ -1,8 +1,12 @@
 ---
-title: 'Trivia Maze'
-date: '2023-12-28'
-updated: '2024-01-11'
-coverImage: '/images/trivia-maze/main-screen.png'
+title: "Trivia Maze"
+description: "A blog post describing the development process of Trivia Maze, a game I worked on for my Software Development class."
+date:
+    published: "2023-12-28"
+    updated: "2024-01-11"
+image:
+    src: "/images/trivia-maze/main-screen.png"
+    alt: "The Trivia Maze main menu."
 ---
 
 [Trivia Maze](https://github.com/OtherAndrew/trivia-maze) is a project I worked on in 2022 as a part of my Software Development and QA class at UW Tacoma. In this post, I will go over the development process and some unique challenges my team faced during development.

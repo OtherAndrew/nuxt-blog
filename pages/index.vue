@@ -1,25 +1,12 @@
 <script setup>
-import { getFileName } from '~/src/utils';
-
 const { data } = await useAsyncData(() => 
     queryContent('posts') 
-        .only(["_path", "title", "date", "coverImage"])
-        .sort({ date: -1 })
+        .only(["_path", "title", "date", "image"])
+        .sort({ "date.published": -1, title: 1 })
         .find()
 );
 
-const postsWithAltText = data.value.map(post => {
-    if ("coverImage" in post) {
-        return {
-            ...post,
-            altText: `Cover image for ${getFileName(post._path)}`,
-        };
-    } else {
-        return post;
-    }
-});
-
-const blogPosts = ref(postsWithAltText);
+const blogPosts = ref(data.value);
 
 useSeoMeta({
     title: "Dev Blog",
