@@ -5,7 +5,7 @@ date:
     published: "2023-12-28"
     updated: "2024-01-11"
 image:
-    src: "/images/trivia-maze/main-screen.png"
+    src: "/images/posts/trivia-maze/main-screen.png"
     alt: "The Trivia Maze main menu."
 ---
 
@@ -31,7 +31,7 @@ Trivia Maze is a game where the player must make their way through a maze to the
 
 ## Notable Features
 
-![game-screen](/images/trivia-maze/game-screen.png)
+![game-screen](/images/posts/trivia-maze/game-screen.png)
 
 - **Intuitive GUI design**: All functionality is accessible through the GUI, including changing the maze size, saving and loading game sessions, and activating cheats. I was able to present the game to a family member and they were able to play the game with no explanation.
 - **Consistent GUI appearance**: This required clever use of composition. We decided to use a class for our theming that contained constants for colors and static methods to build GUI components.
@@ -75,6 +75,6 @@ I have completed team software development projects in the past but this was the
 
 I have also put more consideration towards programming to an interface and test driven development since completing this project. This has resulted in less surprises and less time debugging compared to before, when I didn't employ these two concepts.
 
-![win-screen](/images/trivia-maze/win-screen.png)
+![win-screen](/images/posts/trivia-maze/win-screen.png)
 
 Overall, this project served as a great example of what to expect and consider when undertaking a software development project. I gained valuable experience in planning and designing, project management, debugging, and of course, programming. The skills I gained over the course of this project served me well in future projects.
