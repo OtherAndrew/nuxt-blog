@@ -44,16 +44,11 @@ const atAbout = computed(() => route.path === '/about')
                 <NuxtLink to="/">← Back to home</NuxtLink>
             </div>
             <div class="flex flex-col items-center mt-4">
-                <NuxtLink v-if="!atAbout" to="/about" class="mb-1">
+                <NuxtLink v-if="!atAbout" to="/about" class="mb-2">
                     About
                 </NuxtLink>
                 <NuxtLink to="https://github.com/OtherAndrew/nuxt-blog">
-                    <img class="transition duration-500 opacity-50 hover:opacity-100"
-                        src="/images/github-mark-white.png"
-                        height="32"
-                        width="32"
-                        alt="GitHub link"
-                    />
+                    <LogosGitHub class="size-8 text-blue hover:text-light transition duration-500" />
                 </NuxtLink>
             </div>
         </footer>
