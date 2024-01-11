@@ -4,7 +4,7 @@ useSeoMeta({
     ogTitle: "About",
     description: "About Andrew's dev blog.",
     ogDescription: "About Andrew's dev blog.",
-    ogImage: "/images/icon-green.jpg",
+    ogImage: "/images/icon-green.png",
     ogImageAlt: "Nuxt.js logo",
 });
 
