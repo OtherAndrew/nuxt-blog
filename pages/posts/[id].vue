@@ -8,18 +8,18 @@ const { data } = await useAsyncData(() =>
         .findOne()
 );
 
-const postData = reactive(data.value);
+const postData = ref(data.value);
 
-if (postData.coverImage) {
-    postData.coverAltText = `Cover image for ${getFileName(postData._path)}`
+if (postData.value.coverImage) {
+    postData.value.coverAltText = `Cover image for ${getFileName(postData.value._path)}`
     useSeoMeta({
-        ogImage: postData.coverImage,
-        ogImageAlt: postData.coverAltText,
+        ogImage: postData.value.coverImage,
+        ogImageAlt: postData.value.coverAltText,
     });
 }
 
 useHead({
-    titleTemplate: `${postData.title} | Dev Blog`
+    titleTemplate: `${postData.value.title} - Dev Blog`
 });
 </script>
 
