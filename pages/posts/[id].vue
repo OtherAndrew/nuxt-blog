@@ -56,15 +56,6 @@ useHead({
         @apply my-0;
     }
 
-    h1,
-    h1 > a,
-    h2 > a,
-    h3 > a,
-    h4 > a,
-    h5 > a {
-        @apply text-light;
-    }
-
     h1 {
         @apply mt-8 mb-4 text-3xl font-extrabold;
     }
@@ -83,6 +74,19 @@ useHead({
 
     h5 {
         @apply my-4 text-base font-extrabold;
+    }
+
+    h6 {
+        @apply my-4 text-sm font-extrabold;
+    }
+
+    h1 > a,
+    h2 > a,
+    h3 > a,
+    h4 > a,
+    h5 > a,
+    h6 > a {
+        @apply text-light;
     }
 
     li {
