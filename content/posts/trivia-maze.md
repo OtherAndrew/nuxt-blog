@@ -1,7 +1,7 @@
 ---
 title: 'Trivia Maze'
 date: '2023-12-28'
-updated: '2023-12-31'
+updated: '2024-01-11'
 coverImage: '/images/trivia-maze/main-screen.png'
 ---
 
@@ -55,17 +55,21 @@ We decided to go forward with the graph implementation because it allowed us to 
 
 ## Shortcomings
 
-Our group achieved most of the goals we had for this project other than a couple of stretch goals and developer options, none of which were essential for the final product or for testing. Some parts of the program were difficult to test due to internal randomization and dependencies with other parts of the program.
+Two software development concepts my team failed to consider until near the end of development was [programming to an interface](https://stackoverflow.com/a/383982) and [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development).
 
-## Lessons learned
+### Programming to an interface
 
-I have completed team software development projects in the past but this was the first one one where I explicitly followed agile methodologies, including storyboarding. I liked storyboarding since it allowed us to look at everything we needed to accomplish and break it down into small, doable parts, and track the progress of each feature as it's worked on. For software projects since then I used user stories and storyboards to great effect to organize my team's work.
+My team implemented the maze component classes without defining an interface first. Since we neglected to use interfaces at the start of development, we had a hard time testing the maze functionality until all the pieces of the maze (rooms, doors, and questions) came together. We weren't able to use [mock objects](https://en.wikipedia.org/wiki/Mock_object) to substitute functionality for objects that were in development since we didn't have a good idea of what the object needed to do in the first place. Defining interfaces before implementing the real objects would have given us a clearer understanding of what the objects need to accomplish and what public data and methods need to be exposed.
 
-Two concepts my team neglected to consider until near the end of development was [programming to an interface](https://stackoverflow.com/a/383982) and [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development).
+### Test-driven development
 
-Since we neglected to use interfaces at the start of development, we had a hard time testing the maze functionality until all the pieces of the maze (rooms, doors, and questions) came together. We weren't able to use [mock objects](https://en.wikipedia.org/wiki/Mock_object) to substitute functionality for objects that were in development since we didn't have a good idea of what the object needed to do in the first place. Defining interfaces before implementing the real objects would have given us a clearer understanding of what the objects need to accomplish.
+ My team decided to develop our unit tests after we finished implementing the rest of the program. In the process of developing unit tests, we found that there were some parts of our code that were difficult to test due to internal randomization or excessive dependencies, so we needed to refactor our code so that we could test more parts of it. Like programming to an interface, using test-driven development would have made development easier by making it clear what the code needs to accomplish, what data and methods need to be exposed, and what edge cases to look out for.
 
-Using test-driven development would have made developing unit tests for our code easier and it would have allowed us to troubleshoot bugs earlier. We decided to develop our unit tests after we finished implementing the rest of the program and found that there were some parts of our code which were difficult to test due to internal randomization or excessive dependencies. Creating the unit tests and considering every scenario and edge case first would have allowed us to sort out these problems sooner rather than later.
+## Takeaways
+
+I have completed team software development projects in the past but this was the first where I explicitly followed agile methodologies, including storyboarding. I liked storyboarding since it allowed us to look at everything we needed to accomplish and break it down into small, doable parts, and track the progress of each feature as it's worked on. For software projects since then I used user stories and storyboards to great effect to organize my team's work.
+
+I have also put more consideration towards programming to an interface and test driven development since completing this project. This has resulted in less surprises and less time debugging compared to before, when I didn't employ these two concepts.
 
 ![win-screen](/images/trivia-maze/win-screen.png)
 
