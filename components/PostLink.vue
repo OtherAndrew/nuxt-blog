@@ -1,7 +1,7 @@
 <script setup>
 const props = defineProps(["post"]);
 
-const post = reactive(props.post);
+const post = ref(props.post);
 </script>
 
 <template>

@@ -19,7 +19,7 @@ const postsWithAltText = data.value.map(post => {
     }
 });
 
-const blogPosts = reactive(postsWithAltText);
+const blogPosts = ref(postsWithAltText);
 
 useSeoMeta({
     title: "Dev Blog",

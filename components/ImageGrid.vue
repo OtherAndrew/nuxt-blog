@@ -3,7 +3,7 @@ import { getFileName } from '~/src/utils';
 
 const props = defineProps(["images"]);
 
-const gridImages = reactive(props.images.map(path => {
+const gridImages = ref(props.images.map(path => {
     return {
         path: path,
         altText: getFileName(path),
