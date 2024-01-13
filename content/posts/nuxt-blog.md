@@ -75,7 +75,7 @@ I also appreciated that Vue SFCs contain their logic, markup, and styling in one
 
 ### Tailwind CSS
 
-Since I was rewriting my blog from scratch, I also decided to redo the stying with Tailwind CSS. I was skeptical of the benefits Tailwind offered compared to vanilla CSS, and I initially wasn't a fan of how it resembled inline styling, but I wanted to familiarize myself with it in case I needed to use it in the future.
+Since I was rewriting my blog from scratch, I also decided to redo the styling with Tailwind CSS. I was skeptical of the benefits Tailwind offered compared to vanilla CSS, and I initially wasn't a fan of how it resembled inline styling, but I wanted to familiarize myself with it in case I needed to use it in the future.
 
 I ended up being pleasantly surprised by Tailwind. I appreciated how I could just add styles to an element without having to think about classes, and being able to see the styles next to the HTML elements they affected. I also found myself doing less mental math when adding spacing or setting sizes.
 
@@ -89,7 +89,7 @@ Rewriting my blog with Vue was not as simple as copying everything one-to-one an
 
 The old blog rendered Markdown content using a JavaScript module that parsed Markdown files with [remark](https://remark.js.org) and converted it to HTML which could then be displayed on the page. The problem with this approach was that it made use of Node modules that were disallowed by Vite, such as fs, path, and process.
 
-I was stuck figuring out how to get the Markdown content without having to create a dedicated backend for my blog. That was until I watched [Fireship's "Nuxt in 100 Seconds"](https://www.youtube.com/watch?v=dCxSsr5xuL8&t=96) video, where he mentions the [Nuxt Content](https://content.nuxt.com) module that did exactly what I wanted. Nuxt Content automatically fetches the Markdown file matching the current URL route and gives me both its content and metadata. Its also able to scan the file system for Markdown files, working around the restrictions on server-side Node modules.
+I was stuck figuring out how to get the Markdown content without having to create a dedicated back end for my blog. That was until I watched [Fireship's "Nuxt in 100 Seconds"](https://www.youtube.com/watch?v=dCxSsr5xuL8&t=96) video, where he mentions the [Nuxt Content](https://content.nuxt.com) module that did exactly what I wanted. Nuxt Content automatically fetches the Markdown file matching the current URL route and gives me both its content and metadata. Its also able to scan the file system for Markdown files, working around the restrictions on server-side Node modules.
 
 ### Rendering Markdown content
 
