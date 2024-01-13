@@ -2,7 +2,7 @@
 const { data } = await useAsyncData(() => 
     queryContent('posts') 
         .only(["_path", "title", "date", "image"])
-        .sort({ "date.published": -1, title: 1 })
+        .sort({ "date.published": -1 })
         .find()
 );
 
