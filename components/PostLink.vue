@@ -14,7 +14,7 @@ const post = ref(props.post);
             />
             <img v-else
                 class="object-scale-down rounded-md"
-                src="/images/vue logo.png"
+                src="/images/icon-green.png"
                 alt="Placeholder image"
             />
         </div>
