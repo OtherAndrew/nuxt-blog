@@ -14,7 +14,7 @@ const post = ref(props.post);
             />
             <img v-else
                 class="object-scale-down rounded-md"
-                src="/images/icon-green.png"
+                src="~/assets/images/nuxt-logo.png"
                 alt="Placeholder image"
             />
         </div>

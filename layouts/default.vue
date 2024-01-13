@@ -12,7 +12,7 @@ const atAbout = computed(() => route.path === '/about')
         <header>
             <div v-if="atHome" class="flex flex-col items-center">
                 <img
-                    src="/images/profile.jpg"
+                    src="~/assets/images/profile.jpg"
                     class="rounded-full size-36"
                     alt="Profile picture"
                 />
@@ -24,7 +24,7 @@ const atAbout = computed(() => route.path === '/about')
             <div v-else class="flex flex-col items-center">
                 <NuxtLink to="/">
                     <img
-                        src="/images/profile.jpg"
+                        src="~/assets/images/profile.jpg"
                         class="rounded-full size-28"
                         alt="Profile picture"
                     />
