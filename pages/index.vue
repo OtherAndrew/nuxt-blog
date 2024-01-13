@@ -13,7 +13,7 @@ useSeoMeta({
     ogTitle: "Dev Blog",
     description: "Andrew's dev blog.",
     ogDescription: "Andrew's dev blog.",
-    ogImage: "~/assets/images/profile.jpg",
+    ogImage: "/images/profile.jpg",
     ogImageAlt: "Profile picture",
 });
 
