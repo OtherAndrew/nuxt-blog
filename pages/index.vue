@@ -25,7 +25,7 @@ useHead({
 <template>
     <div>
         <h2 class="text-2xl font-bold my-4">Posts</h2>
-        <ul class="text-xl">
+        <ul>
             <li v-for="post in blogPosts" class="my-2 rounded-xl transition duration-500 hover:bg-dark" :key="post._path">
                 <PostLink :post="post" />
             </li>
