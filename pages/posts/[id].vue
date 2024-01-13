@@ -46,6 +46,10 @@ useHead({
         @apply my-0;
     }
 
+    code {
+        @apply bg-darkest p-0.5;
+    }
+
     h1 {
         @apply mt-8 mb-4 text-3xl font-extrabold;
     }
@@ -55,19 +59,19 @@ useHead({
     }
 
     h3 {
-        @apply my-4 text-xl font-extrabold;
+        @apply my-4 text-xl font-bold;
     }
 
     h4 {
-        @apply my-4 text-lg font-extrabold;
+        @apply my-4 text-lg font-bold;
     }
 
     h5 {
-        @apply my-4 text-base font-extrabold;
+        @apply my-4 text-base font-bold;
     }
 
     h6 {
-        @apply my-4 text-sm font-extrabold;
+        @apply my-4 text-sm font-bold;
     }
 
     h1 > a,
