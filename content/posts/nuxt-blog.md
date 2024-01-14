@@ -3,9 +3,10 @@ title: "Nuxt Dev Blog"
 description: "A blog post describing the development process of this dev blog."
 date:
     published: "2024-01-12"
+    updated: "2024-01-14"
 image:
     src: "/images/posts/nuxt-blog/post-list.png"
-    alt: "The list of posts on the dev blog."
+    alt: "A list of posts on the dev blog."
 ---
 
 [This dev blog](https://github.com/OtherAndrew/nuxt-blog) is a project I started working on after earning my CS degree. In this post, I will go over the development process of this blog.
@@ -47,7 +48,7 @@ A dev blog is used by a software developer to document and reflect upon their ex
 
 This blog is based off [another blog](https://github.com/OtherAndrew/nextjs-blog) I created by following the [Learn Next.js Pages Router tutorial](https://nextjs.org/learn-pages-router/basics/create-nextjs-app). I built websites with plain old HTML, CSS, and JavaScript previously, but I didn't have much experience with modern front end frameworks. I thought creating a dev blog would be a great way to learn and I could use it to showcase my other projects.
 
- I initially chose to use React because I wanted to build up my React skills and I already had some experience with it. I chose to use Next.js alongside React to take advantage of the Pages Router, which eliminated the need to configure a router myself.
+I initially chose to use React because I wanted to build up my React skills and I already had some experience with it. I chose to use Next.js alongside React to take advantage of the Pages Router, which eliminated the need to configure a router myself.
 
 ### Switching to Vue.js
 
@@ -95,7 +96,7 @@ I was stuck figuring out how to get the Markdown content without having to creat
 
 Now that I could load the content of Markdown files, The next challenge I faced was actually getting the Markdown content to display correctly. When the content was displayed, every part of it was formatted like a `<p>` tag, with no special sizing, formatting, or spacing.
 
- I tried a couple things to fix this, one of which was using the [Tailwind CSS Typography plugin](https://stackoverflow.com/a/69602423). I was able to get the Markdown content formatted correctly using the plugin, but the problem was it rendered the content with light mode text by default. I never figured out [how to change the text color](https://tailwindcss.com/docs/typography-plugin) so I looked for other solutions.
+I tried a couple things to fix this, one of which was using the [Tailwind CSS Typography plugin](https://stackoverflow.com/a/69602423). I was able to get the Markdown content formatted correctly using the plugin, but the problem was it rendered the content with light mode text by default. I never figured out [how to change the text color](https://tailwindcss.com/docs/typography-plugin) so I looked for other solutions.
 
 The next thing I tried was [disabling Tailwind Preflight](https://stackoverflow.com/questions/75881126/tailwind-css-is-unstyling-page-created-through-remark-and-rehype). Disabling [Preflight](https://tailwindcss.com/docs/preflight) allowed the Markdown content to display correctly, with formatting and everything. The issue now was that disabling Preflight affected the styling of other Vue components on the same page as the Markdown content, resulting in unintended effects especially with images.
 
@@ -111,4 +112,4 @@ Though I could now change the color of the logo with CSS and make it change colo
 
 ---
 
-Though I am still new to Vue, I feel like I now have a good understanding of how it works and how to use it to create a website. Compared to React, I found developing with Vue a more pleasant experience and I plan to use it for future front end web development projects.
+Though I am still new to Vue, I feel like I now have a good understanding of how it works and how to use it to create a website. Overall, I found developing with Vue a more pleasant experience compared to React, and I plan to use it for future front end web development projects.
