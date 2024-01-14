@@ -112,4 +112,4 @@ Though I could now change the color of the logo with CSS and make it change colo
 
 ---
 
-Though I am still new to Vue, I feel like I now have a good understanding of how it works and how to use it to create a website. Overall, I found developing with Vue a more pleasant experience compared to React, and I plan to use it for future front end web development projects.
+Though I am still new to Vue, I feel like I now have a good understanding of how it works and how to use it to create a website. I found developing with Vue a more pleasant experience compared to React, and I plan to use it for future front end web development projects.
