@@ -68,7 +68,7 @@ Most importantly, I found Vue's [Single-File Component (SFC)](https://vuejs.org/
 
 ![Vue vs. React header](/images/posts/nuxt-blog/vue-vs-react-header.png)
 
-*The Vue version of this blog's header vs the React version.*
+<small>The Vue version of this blog's header vs the React version.</small>
 
 With Vue, the logic and markup are mostly separate, which made writing both the JavaScript and HTML more straightforward. I can look at the HTML in a Vue component and immediately understand how it's supposed to look without having to mentally filter out the JavaScript embedded within.
 

@@ -96,9 +96,14 @@ useHead({
     }
 
     p > img {
-        @apply mx-auto;
+        @apply mx-auto max-h-[32rem];
     }
 
+    /* captions */
+    p > small { 
+        @apply px-8 block text-center italic;
+    }
+    
     pre {
         @apply my-4 py-2 px-4 bg-darkest;
     }
