@@ -149,7 +149,7 @@ Code merging was an issue throughout the project. At the beginning of the projec
 
 We eventually chose to do feature branches rather than personal branches. This worked out better, but we still ended up spending a lot of time merging code at the end of the sprint.
 
-Had we worked longer on this project, I think we would have changed to a continuous integration approach, merging code often as features get completed.
+Had we worked longer on this project, I think we would have switched to a continuous integration approach, merging code often as features get completed.
 
 ## Shortcomings
 
