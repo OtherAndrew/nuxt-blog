@@ -3,7 +3,7 @@ title: "Trivia Maze"
 description: "A blog post describing the development process of Trivia Maze, a game I worked on for my Software Development class."
 date:
     published: "2023-12-28"
-    updated: "2024-01-11"
+    updated: "2024-01-17"
 image:
     src: "/images/posts/trivia-maze/main-screen.png"
     alt: "The Trivia Maze main menu."
@@ -21,7 +21,7 @@ Trivia Maze is a game where the player must make their way through a maze to the
 
 ---
 
-- Develop a software project in a team following agile methodologies, including user stories and storyboarding.
+- Develop a software project in a team following agile methodologies, including user stories and Kanban boards.
 - Create clean, easily testable code following [SOLID](https://en.wikipedia.org/wiki/SOLID) principles of object-oriented programming.
 - Utilize software design patterns such as [model–view–controller (MVC)](https://en.wikipedia.org/wiki/Model–view–controller), [factory](https://en.wikipedia.org/wiki/Factory_method_pattern), and [singleton](https://en.wikipedia.org/wiki/Singleton_pattern) to structure our code.
 - Employ Git and GitHub to facilitate effective collaboration and version control.
@@ -87,7 +87,7 @@ My team implemented the maze component classes without defining an interface fir
 
 ---
 
-I have completed team software development projects in the past but this was the first where I explicitly followed agile methodologies, including storyboarding. I liked storyboarding since it allowed us to look at everything we needed to accomplish and break it down into small, doable parts, and track the progress of each feature as it's worked on. For software projects since then I used user stories and storyboards to great effect to organize my team's work.
+I have completed team software development projects in the past but this was the first where I explicitly followed agile methodologies, including using Kanban boards. I liked using a Kanban board since it allowed us to look at everything we needed to accomplish and break it down into small, doable parts, and track the progress of each feature as it's worked on. For software projects since then I used user stories and Kanban boards to great effect to organize my team's work.
 
 I have also put more consideration towards programming to an interface and test driven development since completing this project. This has resulted in less surprises and less time debugging compared to before, when I didn't employ these two concepts.
 
