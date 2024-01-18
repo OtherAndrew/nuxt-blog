@@ -16,7 +16,7 @@ image:
 
 ![ChatterCast home screen](/images/posts/chattercast/home.png)
 
-ChatterCast is an instant messaging app similar in basic functionality to [Discord](https://discord.com). A user can add people using the app to their contacts and start chats with them. Additionally, users can create chat rooms where multiple users can participate in a chat simultaneously. ChatterCast also gives users a weather forecast for their location or any other location.
+ChatterCast is an instant messaging app similar in basic functionality to [Discord](https://discord.com). A user can add other users to their contacts and start chats with them. Users can also create chat rooms where multiple users can participate in a chat simultaneously. Additionally, ChatterCast gives users a weather forecast for their location or any other location.
 
 ## Goals
 
@@ -42,7 +42,7 @@ ChatterCast is an instant messaging app similar in basic functionality to [Disco
     - Deploy web service to a cloud platform.
 - Exercise version control best practices to effectively collaborate on code.
 - Follow agile software development practices.
-    - Participate in sprint planning, daily stand-up, backlog refinement, code review, and sprint retrospective meetings over multiple two-week sprints.
+    - Participate in daily stand-ups, sprint planning, backlog refinement, code review, and sprint retrospective meetings over multiple two-week sprints.
     - Organize work items with user stories and storyboards.
 - Present app to client at different stages of development.
 
@@ -92,8 +92,6 @@ I also wrote documentation for each API endpoint with [apiDoc](https://apidocjs.
 
 ---
 
-ChatterCast was one of, if not *the* largest and most complex project I've worked on as part of my degree. As such, I faced numerous challenges during development. I will talk about the most significant here.
-
 ### Fetching weather information
 
 The toughest challenge I had to contend with was fetching the weather information from a third-party API.
@@ -129,6 +127,29 @@ Running database queries with Express was pretty straightforward and followed th
 
 After several hours of work, I managed to get the new contacts API working, complete with apiDoc comments explaining its usage.
 
+## Team experience
+
+My team experience working on ChatterCast was positive overall, but we did have some struggles.
+
+### Communication
+
+One thing we didn't struggle with was communication. I attribute a lot of our teams's success to keeping in constant contact via Discord. Whenever someone had an issue they could just bring it up in the Discord chat and everyone could stay informed about it.
+
+### Scrum
+
+ChatterCast was the first project I was a part of where I worked in structured two-week sprints, with daily stand-ups, sprint planning, backlog refinement, code review, and sprint retrospective meetings.
+
+Sticking to the meeting schedule was difficult initially. Our team's schedules didn't line up and our daily stand-ups often ran longer than expected. As we got more used to the scrum process however, meetings ran smoother and stayed on topic more often.
+
+Using GitHub Projects for storyboarding took some getting used to. I used Trello for storyboarding before but GitHub Projects felt more restrictive. It did have some features I appreciated though. We could put a checklist on each user story so we could see what progress has been made and what still needed to be accomplished. We could also link each story to a pull request, which made tracking finished work much easier.
+
+### Code merging
+
+Code merging was an issue throughout the project. At the beginning of the project, we chose to branch off from the dev branch using personal branches for our work, and then merge our at the end of the sprint. This resulted in long meetings where we spent hours merging code and fixing conflicts.
+
+We eventually chose to do feature branches rather than personal branches. This worked out better, but we still ended up spending a lot of time merging code at the end of the sprint.
+
+Had we worked longer on this project, I think we would have changed to a continuous integration approach, merging code often as features get completed.
 
 ## Shortcomings
 
@@ -151,5 +172,5 @@ The following features were not fully implemented client-side or server-side:
 
 ---
 
-Building ChatterCast was undoubtedly one of the most rigorous projects I have undertaken. I had to learn how to quickly get up to speed and deliver code. Beyond that, I now have a greater understanding about what it takes to develop a full stack mobile app.
+Building ChatterCast was undoubtedly one of the most rigorous projects I have undertaken. I had to learn how to quickly get up to speed and deliver code. Beyond that, I now have a greater understanding about what it takes to develop a full stack mobile app and how to work well with others to deliver code.
 
