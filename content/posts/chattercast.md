@@ -127,13 +127,13 @@ Running database queries with Express was pretty straightforward and followed th
 
 After several hours of work, I managed to get the new contacts API working, complete with apiDoc comments explaining its usage.
 
-## Team experience
+## Team Experience
 
-My team experience working on ChatterCast was positive overall, but we did have some struggles.
+---
 
 ### Communication
 
-One thing we didn't struggle with was communication. I attribute a lot of our teams's success to keeping in constant contact via Discord. Whenever someone had an issue they could just bring it up in the Discord chat and everyone could stay informed about it.
+One of our strengths as a team was our communication. I attribute a lot of our teams's success to keeping in constant contact via Discord. Whenever someone had an issue they could just bring it up in the Discord chat and everyone could stay informed about it. Nobody fell off the face of the Earth, and there were few surprises if any.
 
 ### Scrum
 
