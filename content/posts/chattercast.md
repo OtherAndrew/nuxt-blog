@@ -3,6 +3,7 @@ title: "ChatterCast"
 description: "A blog post describing the development process of ChatterCast - an instant messaging and weather app I helped develop as a part of my Mobile App Development class."
 date:
     published: "2024-01-15"
+    updated: "2024-01-17"
 image:
     src: "/images/posts/chattercast/logo.png"
     alt: "The ChatterCast logo."
@@ -43,7 +44,7 @@ ChatterCast is an instant messaging app similar in basic functionality to [Disco
 - Exercise version control best practices to effectively collaborate on code.
 - Follow agile software development practices.
     - Participate in daily stand-ups, sprint planning, backlog refinement, code review, and sprint retrospective meetings over multiple two-week sprints.
-    - Organize work items with user stories and storyboards.
+    - Organize work items with user stories and Kanban boards.
 - Present app to client at different stages of development.
 
 ## Technologies Used
@@ -133,23 +134,23 @@ After several hours of work, I managed to get the new contacts API working, comp
 
 ### Communication
 
-One of our strengths as a team was our communication. I attribute a lot of our teams's success to keeping in constant contact via Discord. Whenever someone had an issue they could just bring it up in the Discord chat and everyone could stay informed about it. Nobody fell off the face of the Earth, and there were few surprises if any.
+One of our strengths as a team was our communication. We kept in constant contact via Discord, and whenever someone had an issue they could just bring it up in the Discord chat and everyone could stay informed about it. Nobody fell off the face of the Earth, and nobody was left in the dark.
 
 ### Scrum
 
 ChatterCast was the first project I was a part of where I worked in structured two-week sprints, with daily stand-ups, sprint planning, backlog refinement, code review, and sprint retrospective meetings.
 
-Sticking to the meeting schedule was difficult initially. Our team's schedules didn't line up and our daily stand-ups often ran longer than expected. As we got more used to the scrum process however, meetings ran smoother and stayed on topic more often.
+Sticking to the meeting schedule was difficult initially. Our schedules didn't conveniently line up and our daily stand-ups often ran longer than expected. As we got more used to the scrum process however, meetings ran smoother and stayed on topic more often.
 
-Using GitHub Projects for storyboarding took some getting used to. I used Trello for storyboarding before but GitHub Projects felt more restrictive. It did have some features I appreciated though. We could put a checklist on each user story so we could see what progress has been made and what still needed to be accomplished. We could also link each story to a pull request, which made tracking finished work much easier.
+Using GitHub Projects for user stories took some getting used to. I used Trello in the past but GitHub Projects felt more restrictive. It did have some features I appreciated though. We could put a checklist on each user story so we could see what progress has been made and what still needed to be accomplished. We could also link each story to a pull request, which made tracking finished work much easier.
 
 ### Code merging
 
-Code merging was an issue throughout the project. At the beginning of the project, we chose to branch off from the dev branch using personal branches for our work, and then merge our at the end of the sprint. This resulted in long meetings where we spent hours merging code and fixing conflicts.
+Code merging was an issue throughout the project. At the beginning of the project, we chose to branch off from the dev branch using personal branches for our work, and then merge at the end of the sprint. This resulted in long meetings where we spent hours merging code and fixing conflicts.
 
 We eventually chose to do feature branches rather than personal branches. This worked out better, but we still ended up spending a lot of time merging code at the end of the sprint.
 
-Had we worked longer on this project, I think we would have switched to a continuous integration approach, merging code often as features get completed.
+Had we worked longer on this project, I think we would have switched to a [continuous integration](https://www.atlassian.com/continuous-delivery/continuous-integration) approach, merging code often as features get completed.
 
 ## Shortcomings
 
