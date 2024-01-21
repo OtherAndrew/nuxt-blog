@@ -27,5 +27,5 @@ logs
 content/posts/test--*.md
 
 # Ignore these directories
-.draft
+.drafts
 .ignore
