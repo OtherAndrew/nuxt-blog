@@ -1,6 +1,4 @@
 <script setup>
-const name = ref("Andrew");
-
 const route = useRoute();
 
 const atHome = computed(() => route.path === '/');
@@ -10,31 +8,8 @@ const atAbout = computed(() => route.path === '/about')
 <template>
     <div class="max-w-md sm:max-w-xl mt-12 mb-24 mx-auto p-8 bg-darker rounded-3xl">
         <header>
-            <div v-if="atHome" class="flex flex-col items-center">
-                <img
-                    src="~/assets/images/profile.jpg"
-                    class="rounded-full size-36"
-                    alt="Profile picture"
-                />
-                <h1 class="text-4xl font-extrabold mt-4">
-                    {{ name }}
-                </h1>
-                <p class="text-xl mt-2">Lean, mean, programming machine.</p> 
-            </div>
-            <div v-else class="flex flex-col items-center">
-                <NuxtLink to="/">
-                    <img
-                        src="~/assets/images/profile.jpg"
-                        class="rounded-full size-28"
-                        alt="Profile picture"
-                    />
-                </NuxtLink>
-                <h2 class="text-2xl font-bold mt-4">
-                    <NuxtLink to="/" class="text-inherit">
-                        {{ name }}
-                    </NuxtLink>
-                </h2>
-            </div>
+            <HeaderLarge v-if="atHome" />
+            <HeaderSmall v-else />
         </header>
         <main>
             <slot></slot>
