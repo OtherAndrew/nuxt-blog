@@ -1,6 +1,6 @@
 ---
 title: "ChatterCast"
-description: "A blog post describing the development process of ChatterCast - an instant messaging and weather app I helped develop as a part of my Mobile App Development class."
+description: "A blog post describing the development process of ChatterCast - an instant messaging and weather app I helped develop as a part of my Mobile Application Programming class."
 date:
     published: "2024-01-15"
     updated: "2024-01-17"
@@ -9,7 +9,7 @@ image:
     alt: "The ChatterCast logo."
 ---
 
-[ChatterCast](https://github.com/AmtojKaur/Group4_Project) is a full stack instant messaging and weather app I helped develop as a part of my Mobile App Development class at UW Tacoma. In this post, I will go over my contribution to this project and some challenges I faced during development.
+[ChatterCast](https://github.com/AmtojKaur/Group4_Project) is a full stack instant messaging and weather app I helped develop as a part of my Mobile Application Programming class at UW Tacoma. In this post, I will go over my contribution to this project and some challenges I faced during development.
 
 ## Description
 
