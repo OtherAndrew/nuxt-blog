@@ -80,7 +80,7 @@ useHead({
     h4 > a,
     h5 > a,
     h6 > a {
-        @apply text-light;
+        @apply text-inherit;
     }
 
     li {
