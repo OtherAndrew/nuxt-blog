@@ -46,6 +46,7 @@ useHead({
         @apply my-0;
     }
 
+    /* inline code */
     code {
         @apply bg-darkest p-0.5;
     }
@@ -104,8 +105,14 @@ useHead({
         @apply px-8 block text-center italic;
     }
     
+    /* code block background */
     pre {
         @apply my-4 py-2 px-4 bg-darkest;
+    }
+
+    /* code block text */
+    pre > code {
+        @apply p-0;
     }
     
     ul {
