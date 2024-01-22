@@ -112,7 +112,7 @@ useHead({
 
     /* code block text */
     pre > code {
-        @apply p-0;
+        @apply p-0 text-sm;
     }
     
     ul {
